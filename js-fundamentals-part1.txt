@@ -1,0 +1,62 @@
+
+------>  A BRIEF INTRODUCTION TO JS 
+
+JavaScript is a high level object-oriented, multi paradigm programming language
+
+
+- Programming language = INSTRUCT COMPUTER TO DO THINGS 
+
+- High Level Language = we dont need to worry about complex stuff like memory management 
+
+- Objecte oriented = Based on objects for storing most kinds of data 
+
+- Multi Paradigm = We can use different styles of programming - SUCH AS DECLARATIVE AND IMPERATIVE PROGRAMMING
+
+
+---- DIFERENCA : DECLARATIVE LANGUAGE X IMPERATIVE LANGUAGE 
+
+ABORDAGEM IMPERATIVA : VOCE IRA DESCREVER "COMO" VOCE FAZ ALGUMA COISA 
+
+ex: function double(arr) {
+	let results = []
+	for (let i = 0; i < arr.length; i++){
+		results.push(arr[i] * 2)
+	}
+	return results
+}
+
+ABORDAGEM DECLARATIVA : VOCE IRA DESCREVER "O QUE" VOCE FAZ 
+
+const double = arr => arr.map((item) => item * 2)
+
+
+
+---> THE ROLE OF JS IN WEB DEVELOPMENT:
+
+-- 3 CORE TECHNOLOGIES OF THE WEB: 
+
+A) HTML: responsable for the content of the page, such as text, buttons, imagens 
+
+
+B) CSS : presentation of the HTML`S content 
+
+
+C) JS : The real programming language of the internet. And it allows developers to add dynamic and interactive effects to 
+any webpage
+        We also use it to manipulate the content or the CSS, load data from remove servers, and 
+        really build intire applications in the browser, which we then call web applications   
+
+
+- WE CAN ALSO USE THIS ANALOGY 
+
+- HTML = NOUNS 
+- CSS = ADJETIVES 
+- JS = VERBS 
+
+---- IMPPPPP :::::: THE JS LANGUAGE AND THE WEB BROWSER ARE ACTUALLY TWO SEPARATE THINGS 
+
+ AND WHAT THAT MEANS IS THAT JS CAN ALSO RUN OUTSIDE OF WEB BROWSERS - 
+ for example: IT`S POSSIBLE TO USE JavaScript ON A WEB SERVER USING A VERY POPULAR TECHNOLOGY CALLED NODE.JS 
+ WHICH DOESN`T NEED ANY BROWSER AT ALL 
+
+--- WHEN WE CREATE JAVASCRIPT IN THE BROWSER WE CREATE SO CALLED FRONT END APPLICATIONS 
