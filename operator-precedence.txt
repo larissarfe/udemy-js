@@ -1,0 +1,17 @@
+
+
+--------> OPERATOR PRECEDENCE:
+
+- PRECEDENCE OF DIFFERENT OPERATORS 
+
+const now = 2037;
+const ageJonas = now - 1991;
+const ageSarah = now - 2018; 
+
+console.log(now - 1991 > now - 2018); - WHY DOES THIS WORK?
+
+why js first calculates de - operation before the comparisson?
+
+- IT WORKS THIS WAY BECAUSE JS HAS A WELL DEFINED ORDER OF OPERATOR PRECEDENCE(THE ORDER IN WHICH OPERATOR ARE EXECUTED)
+
+

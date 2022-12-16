@@ -1,0 +1,43 @@
+
+- What is an operator? It basically allows us to transform values or combine multiple values 
+ 
+ ----------> MATH OPERATORS 
+
+const ageJonas = 2037 - 1991;
+const ageSarah = 2037 - 2018; 
+
+console.log(ageJonas, ageSarah);
+
+WE CAN LOG DIFFERENT VALUES AT THE SAME TIME IN ONE CONSOLE.LOG 
+
+typeof IS AN OPERATOR!!!!!!!!!! 
+
+console.log(typeof ageSarah);
+
+---------- > ASSIGN OPERATORS 
+
+let x = 10 + 5; - THE + OPERATOR WILL BE AVALUETED BEFORE THE = 
+
+x += 10; -> QUER DIZER X = X + 10 
+X *= 4; -> QUER DIZER X = X * 4 
+
+x ++; -> QUER DIZER X = X + 1
+
+x -- -> quer dizer x = x - 1 
+
+
+------------> COMPARISON OPERATORS 
+
+WE USE COMPARISON OPERATORS TO PRODUCE BOOLEAN VALUES 
+
+EX: 
+
+console.log(ageJonas > ageSarah); - should return true or false 
+console.log(ageSarah >= 18 ); - true 
+ 
+ const isfullAge = ageSarah >=18 
+ 
+ console.log(now - 1991 > now - 2018 )
+
+HOW DOES JS KNOW IF IT SHOULD DO THE MATH FIRST OU THE COMPARISON FIRST? 
+

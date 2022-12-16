@@ -1,0 +1,18 @@
+
+----- if/else statements 
+
+if the condition is true than the block will be executed: 
+
+const age = 19;
+const isOldEnough = age >= 18;
+
+if(){
+    
+} else{
+
+}
+
+an if/else block is a control structure because you get to decide wghich lines of code 
+will be executed
+
+- THE ELSE IS OPTIONAL 
