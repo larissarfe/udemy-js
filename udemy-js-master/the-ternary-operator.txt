@@ -1,0 +1,25 @@
+
+----> THE CONDITIONAL (TERNARY) OPERATOR 
+
+We already saw two ways of writing conditionals:
+
+a) the regular if-else statement and
+b) the switch statement
+
+BUT THERE IS ANOTHER ONE, and that's the conditional operator.
+
+So the conditional operator allows us to write something similar to an if-else statement BUT ALL IN ONE LINE 
+
+EX: 
+
+const age = 23;
+
+age >= 18 ? console.log('I like to drink wine') : console.log('I like to drink water');
+
+obs the else block goes after : 
+
+- The conditional operator is in fact an operator so 
+REMEMBER THAT AN OPERATOR ALWAYS PRODUCE A VALUE
+
+
+

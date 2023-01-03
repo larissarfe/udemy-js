@@ -1,0 +1,67 @@
+
+// In every programming language, values can have different types 
+// depending on the type of data that we want them to hold. 
+
+// we already saw strings and numbers, but there are actually more data types
+
+// THE DATA TYPES WE HAVE IN JS: 
+
+// - VALUE : EVERY VALUE IS EITHER AN OBJECT, WHICH LOOKS SOMETHING LIKE THIS: 
+// let me = {
+//   name: 'Jonas'
+// };
+
+// OR A PRIMITIVE VALUE : 
+
+// let firstName = 'Jonas';
+// let age = 30; 
+
+// SO A VALUE IS ONLY A PRIMITIVE WHEN IT`S NOT AN OBJECT
+
+// 7 PRIMITIVE DATA TYPES: 
+
+// 1 - NUMBER, 2 - STRING, 3- BOOLEAN, 4- UNDEFINED, 5-NULL, 6- SYMBOL, 7- BIG INT
+
+// 1- NUMBER: FLOATING POINT NUMBERS - USED FOR DECIMALS AND INTEGERS let age= 23; 
+
+// Numbers are always so called floating point numbers - which means they always have decimals, even if we dont see them or don`t define them 
+// IN JS ALL NUMBERS ARE SIMPLY THE DATATYPE NUMBER 
+
+// 2 - STRINGS: SIMPLY A SEQUENCE OF CHARACTERS 
+// 3 - BOOLEAN : LOGYCAL TYPE THAT CAN ONLY BE TRUE OR FALSE - USED FOR TAKING DECISIONS let fullAge = true; 
+
+// 4 - UNDEFINED : VALUE TAKEN BY A AVARIABLE THAT IS NOT YET DEFINED ('EMPTY VALUE')
+
+// EX: let children; - NOT ASSIGN THE VALUE YET 
+
+// 5 - NULL : ALSO MEANS 'EMPTY VALUE'
+
+// 6 - SYMBOL : VALUE THAT IS UNIQUE AND CANNOT BE CHANGED 
+
+// 7 - BIGINT : LARGER INTEGERS THAN THE NUMBER TYPE CAN HOLD
+
+// IMP:::::::::: JS HAS DYNAMIC TYPING - WE DO NOT HAVE TO MANNUALLY DEFINE THE DATA TYPE OF THE VALUE 
+// STORED IN A VARIABLE. INSTEAD, DATA TYPES ARE DETERMINED AUTOMATICALLY 
+
+// IN JS THE VALUE THAT HAS A TYPE, AND NOT THE VARIABLE - SO VARIABLES SIMPLY STORE VALUES THAT HAVE A TYPE 
+// - IT ALLOWS US TO ASSGIN A NEW DATA TYPE TO THE SAME VARIABLE 
+
+// DYNAMIC TYPE SIMPLY MEANS THAT WE CAN EASILY CHANGE THE TYPE OF A VALUE 
+
+// OBS: THE FIRST TIME WE DECLARE A VARIABLE WE USE LET
+// AND TO REASSING THE VARIABLE WE DO NOT USE IT!!!! 
+
+let javaScripetIsFun = true; 
+
+javaScripetIsFun = 'YES!!';
+
+console.log(javaScripetIsFun);
+
+// EXAMPLE OF UNDEFINED : 
+
+ // UNDEFINED IS THE VALUE TAKEN BY A VARIABLE THAT IS NOT YET DEFINED 
+
+let year;
+console.log(year); 
+
+// UNDEFINED IS BOTH THE VALUE AND THE TYPE OF THE VALUE 
