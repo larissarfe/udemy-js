@@ -1,0 +1,54 @@
+
+----- THE SWITCH STATEMENT: 
+
+It's a alternative way of writing a complicated if-else statement when all you want to do is to 
+compare one value to multiple different options, basically. 
+
+- a weekday variable and for each day there is a different activity. 
+so basically we gonna map one activity to each day 
+
+const day = 'monday'; 
+
+switch(day) {
+    case 'monday':
+      console.log('Plan course structure');
+      console.log('Go to coding meetup');
+      break;
+    case 'tuesday': 
+      console.log('Prepare theory videos');
+      break;
+    case 'wednesday':
+    case 'thursday':      -----> the same for both wednesday and thursday 
+      console.log('Write code examples'); 
+      break;
+    case 'friday':
+      console.log('Record videos');
+      break;
+    case 'saturday':
+    case 'sunday': 
+      console.log('Enjoy the weekend');
+      break;
+    default:
+    console.log('Not a valid day');
+}
+
+
+obs: WE CAN ALSO USE A DEFAULT THAT
+WILL BE EXECUTED IF ALL THE OTHER CASES FAIL
+
+obs: this actually does a strict comparisson ===
+SO IT'S REALLY DESIGNED FOR EQUALITY AND NOT FOR COMPARING STUFF 
+
+if(day === 'monday'){
+    console.log('Plan course structure', && 'Go to course meetup');  
+}   else if(day === 'tuesday'){
+    console.log('Prepare theory videos');
+}   else if(day ==='wednesday' && day === 'thursday'){
+    console.log('Write code examples');
+}   else if(day === 'friday'){
+    console.log('Record videos');
+}   else if(day === 'saturday' && day === 'sunday'){
+    console.log('Enjoy the weekend');
+}   else {
+    console.log('Not a valid day');
+}
