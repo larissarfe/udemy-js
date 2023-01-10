@@ -1,3 +1,38 @@
 
 ----> JAVASCRIPT RELEASES: ES5, ES6+ AND ESNEXT
 
+how JS releases work and how we can use them: 
+
+JS HISTORY:
+
+- With the invention of the internet, it was needed a programming 
+language for the browser 
+
+- The language was submitted to an independent standard organization called ECMA 
+
+- With a need to standardize the language, ECMA releases ECMAScript 1 (ES1), the first official standard 
+for JavaScript (ECMAScript is the standard, JavaScript is the language in practice)
+
+- With the ECMA1 every browser could now implement the same standard JavaScript 
+
+- In the real world we usually use the term ECMAScript to refer to the standard, while JavaScript 
+is used when we talk about the language in practice, as it's implemented in browsers
+
+- ES6 was launch in June, 2015 
+
+- Now ECMAScript changes to an annual release cycle in order to ship less features per update
+
+--------> BACKWARDS COMPATIBILITY: DON'T BREAK THE WEB!! 
+
+- Backwards compatibility all the way to ES1 - IT MEANS THAT IF YOU WERE TO TAKE 
+SOME JS CODE WRITTEN BACK IN 1997 AND PUT IT IN A MODERN BROWSER WITH A MODERN JS ENGINE TODAY,
+IT WOULD STILL WORK JUST THE SAME 
+
+    And it works this way because of the fundamental principle that's baked into the 
+    JS language and it's development, which is to not break the web ( this means that there is almost never anything removed from the language,
+    but only added in new versions.) for example: - OLD FEATURES ARE NEVER REMOVED; 
+    - NOT REALLY NEW VERSIONS, JUST  INCREMENTAL UPDATES -RELEASES;
+    - Websites keep working forever!!!)
+
+    WE CANNOT CALL THE CHANGES IN THE LANGUAGE NEW VERSIONS BECAUSE THEY DO NOT CONTAIN 
+    BREAKING CHANGES LIKE WHEN OTHER LANGUAGES MOVED TO A NEW VERSION 
