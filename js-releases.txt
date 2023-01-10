@@ -52,6 +52,24 @@ IMP ------> SO HOW CAN WE USE MODERN JS TODAY? BECAUSE BROWSERS THAT USERS ARE U
 
 TO ANSWER THE QUESTION, WE NEED TO CONSIDER TWO DISTINCT SCENARIOS:
 
-1 - DEVELOPMENT: During the development
+1 - DEVELOPMENT: During the development - SIMPLY USE THE LATEST GOOGLE CHROME!!
 
-2 - PRODUCTION: 
+2 - PRODUCTION: During production - USE BABEL TO TRANSPILE AND POLYFILL YOUR CODE (CONVERTING BACK TO ES5 TO ENSURE BROWSER COMPATIBILITY FOR ALL USERS)
+production is when you deploy your application on the internet to run in the user's browser 
+
+- THAT'S WHEN PROBLEMS MIGHT APPEAR - WE CANNOT CONTROL WHICH BROWSER THE USER USES 
+
+- THE ES5 VERSION IS FULLY SUPPORTED IN ALL BROWSERS(down to IE 9 from 2011)
+- READY TO BE USED TODAY 
+
+ES6+ IS WHERE TRANSPILLING COMES IN 
+ES6/ES2015 -- ES2020 -> ES6+ WELL SUPPORTED IN ALL MODERN BROWSERS; 
+                        NOT SUPPORTED IN OLDER BROWSERS;
+                        CAN USE MOST FEATURES IN PRODUCTION WITH TRANSPILLING AND POLYFILLING
+
+
+
+ES2021 - forever -> ESNext: Future versions of the language (new feature proposals that reach Stage 4)
+                    Can already use SOME features in production with transpiling and polyfilling
+
+
