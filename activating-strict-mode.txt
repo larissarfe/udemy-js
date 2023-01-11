@@ -1,0 +1,25 @@
+
+------- ACTIVATING STRICT MODE:
+
+// strict mode is a special mode that we can activate in JS which makes easier for us to write a secure JS code
+// and all we have to do to write a secure code is to write this string at the beginning of the script 
+// the first line of code should be the string 'use strict' - NO CODE - COMMENTS ARE ALLOWED -
+// we can also actually activate the strict mode ONLY FOR A SPECIFIC FUNCTION OR A SPECIFIC BLOCK 
+// BUT JUST ALWAYS PUT THE STRICT MODE AT THE BEGINNING OF YOUR SCRIPTS AND LIKE THAT WRITE MORE SECURE CODE 
+
+// WHAT SECURE CODE MEANS? MEANS THAT IT MAKES EASIER FOR US DEVELOPERS TO AVOID ACCIDENTAL ERRORS. 
+// SO BASICALLY IT AVOIDS US INTRODUCE BUGS INTO OUR CODE BECAUSE OF 2 REASONS 
+// FIRST, STRICT MODE FORBIDS US TO DO CERTAIN THINGS 
+// AND SECOND, IT WILL ACTUALLY CREATE VISIBLE ERRORS FOR US IN CERTAIN SITUATIONS IN WHICH WITHOUT THE STRICT MODE JS WOULD SIMPLY FAIL SILENTLY 
+// WITHOUT LETTING US KNOW THAT WE DID A MISTAKE 
+// another thing strict mode does is to introduce a short list of variable names that are reserved for features that might be added to the language a bit latter 
+
+
+'use strict';
+
+let hasDriversLicense = false; 
+const passTest = true; 
+
+if (passTest) hasDriverLicense = true; 
+
+MISSPELLED ON POURPOSE THE VARIABLE'S NAME 
