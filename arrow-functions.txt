@@ -1,0 +1,55 @@
+
+----- > ARROW FUNCTIONS 
+
+BESIDES FUNCTONS DECLARATIONS AND FUNCTIONS EXPRESSIONS THERE'S A THIRD TYPE OF FUNCTION THAT WAS ADDED TO 
+JS IN ES6 AND THAT'S THE ARROW FUNCTON.
+
+AN ARROW FUCTION IS SIMPLY A SPECIAL FORM OF FUNCTION EXPRESSION THAT IS SHORTER AND THEREFORE FASTER TO WRITE 
+
+// function expression:
+
+const calcAge2 = function (birthYear) {
+    return 2037 - birthYear;
+}
+
+// ARROW FUNCTION: 
+
+const calcAge3 = birthYear => 2037 - birthYear;
+const age3 = calcAge3(1991);
+
+
+AFTER THE ARROW WE SIMPLY WRITE WHAT WE WANT TO RETURN 
+
+- the arrow fuction is easier to write;
+- the return actually happens implicitly; 
+- It's excellent for simple one liner functions 
+
+// ARROW FUNCTION 
+// the birthYear is a parameter 
+// this is the simplest form which when we only have exactle one parameter 
+//and basically one line of code in which we want to return something 
+
+
+const calcAge3 = birthYear => 2037 - birthYear;
+const age3 = calcAge3(1991);
+console.log(age3);
+
+// BUT the arrow function can get more complicated if we want to add more parameters or more lines of code 
+
+// WE CAN ONLY OMIT THE RETURN KEYWORD IF WE HAVE ONLY ONE LINER FUNCTION 
+// ONE PARAMETER AND MORE THAN ONE LINE OF CODE: 
+
+const yearsUntilRetirement = (birthYear, firstName) => {
+    const age = 2037 - birthYear;
+    const retirement = 65 - age;
+    //return retirement;
+    return `${firstName} retires in ${retirement} years. `
+}
+
+console.log(yearsUntilRetirement(1991, 'Joe'));
+
+// BUT WHAT IF WE HAD MULTIPLE PARAMETERS? THEN WE NEED TO WRAP THE PARAMETERS INTO PARENTHESES
+
+// IMP FUNDAMENTAL DIFFERENCE: CANNOT USE ARROW FUNCTONS FOR EVERYTING BECAUSE THE ARROW FUNCTIONS, UNLIKE THE 
+// FUNCTIONS EXPRESSIONS AND FUNCTIONS DECLARATIONS DO NOT GET A SO CALLED 'THIS' KEYWORD
+
