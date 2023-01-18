@@ -1,0 +1,27 @@
+
+--------> FUNCTIONS CALLING OTHER FUCTIONS 
+
+- CALLING ONE FUNCTION FROM INSIDE ANOTHER FUNCTION: 
+
+     this is something that we do all the time in JS 
+
+function foodProcessor(apples, oranges) {
+    const juice = `Juice with ${apples} apples and ${oranges} oranges`;
+    return juice;
+}
+
+--> IN THIS EXAMPLE LET'S CONSIDER THAT EHR FRUIT PROCESSOR CAN ONLY MAKE JUICE WITH SMALLER FRUIT PIECES
+SO BEFORE MAKING THE JUICE, THE FOOD PROCESSOR NOW NEEDS ANOTHER MACHINE THAT FIRST CUTS THE FRUITS THAT WE GIVE IT INTO MULTIPLE SMALLER PIECES 
+SO::
+
+function cutFruitPieces(fruit) {
+    return fruit * 4;
+}
+
+function foodProcessor(apples, oranges) {
+    const applePieces = cutFruitPieces(apples);
+    const orangePieces = cutFruitPieces(oranges);
+    const juice = `Juice with ${apples} apples and ${oranges} oranges`;
+    return juice;
+}
+
