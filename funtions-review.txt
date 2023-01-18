@@ -1,0 +1,52 @@
+
+-------> FUNCTIONS REVIEW 
+
+REWRITING 'YEARS UNTIL RETIREMENT' FUNCTION: 
+
+
+IMP: THE birthYear VARIABLE IS LIKE A LOCAL VARIABLE FOR EACH FUNCTION. THERE'S NO PROBLEM HAVING PARAMETERS
+WITH THE SAME NAME 
+
+const calcAge = function(year){
+    return 2037 - year;
+}
+
+const yearsUntilRetirement = function (birthYear, firstName){
+    const age = calcAge(birthYear);
+    const retirement = 65 - age; 
+
+    
+    //return `${firstName} retires in ${retirement} years`;
+
+    if(retirement > 0){
+        console.log(`${firstName} retires in ${retirement} years`);
+        return retirement;
+    } else {
+        console.log(`${firstName} has already retired`);
+        return -1
+    }
+} 
+
+// OBS- IMP: THE RETURN KEYWORD EXIT THE FUNCTION IMMEDIATELY - THE FUNCTION IS DONE AFTER IT RETURNS THE VALUE OF RETIREMENT
+// SO WE CANT PUT THE CONSOLE.LOG AFTER THE RETURN KEYWORD, ONLY BEFORE
+
+console.log(yearsUntilRetirement(1970, 'Mike'));
+console.log(yearsUntilRetirement(1991, 'Jonas'));
+
+FUNCTIONS DECLARATIONS -> Funtions that can be used before it's declared 
+
+FUNCTIONS EXPRESSIONS -> Functions VALUES that can be stored inside variables;
+
+ARROW FUNCTION  ->  Great for quick one line functions. HAS NO THIS KEYWORD 
+ARROW FUNCTIONS ARE ALSO FUNCTIONS EXPRESSIONS BUT ESPECIAL ONES - also no return keyword
+
+------ Three different ways of writing functions, but they all work in a similar way: RECEIVE INPUT DATA, TRANSFORM DATA,
+ AND THEN OUTPUT DATA 
+
+----- THE RETURN STATEMENT -> WE USE TO OUTPUT A VALUE FROM THE FUNCTION
+THE RETURN STATEMENT ALSO IMMEDIATELY TERMINATES THE FUNCTION'S EXECUTION 
+
+-- WE CALL THE FUNCTIONS USING PARENTESHIS 
+
+-- WITHOUT THE PARENTESHIS THE FUNCTION IS REALLY JUST A VALUE 
+
