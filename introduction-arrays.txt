@@ -1,0 +1,25 @@
+--- DATA ESTRUCTION: ARRAY
+
+ex: store friend's names into variables so I can use them later
+
+An array is like a big container into which we can throw variables and then
+later reference them 
+
+the 2 most important data estructure, at least in JS are Arrays and Objects 
+
+const friend1 = 'Michael';
+const friend2 = 'Steven';
+const friend3 = 'Peter'; 
+
+const friends = ['Michael', 'Steven', 'Peter'];
+const years = new Array(1991, 1984, 2008, 2020);
+
+to see the number of elements of the array we use:
+
+console.log(friends.length);
+console.log(friends[friends.length -1]); - // TO SEE THE VERY LAST ITEM OF THE ARRAY
+
+AN EXPRESSION CAN BE USED INSIDE THE [] 
+AN EXPRESSION IS SOMETHING THAT PRODUCES A VALUE 
+
+- WE COULD NOT PUT A STATEMENT INSIDE THE []
