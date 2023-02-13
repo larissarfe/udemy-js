@@ -1,0 +1,33 @@
+------ BASIC ARRAYS OPERATIONS (METHODS):
+
+- JS HAS SOME BUILT IN FUNCTIONS
+
+-------- ADDING ELEMENTS:
+
+1- PUSH: ADDS ELEMENTS TO THE END OF THE ARRAY;
+ex: friends.push('Jay');
+
+ALSO RETURN THE LENGTH OF THE ARRAY
+
+2- UNSHIFT: ADDS ELEMENTS IN THE BEGINNING OF THE ARRAY
+ex: friends.unshift('Jon');
+
+-------- REMOVING ELEMENTS:
+
+1- POP: REMOVES THE LAST ELEMENT OF THE ARRAY:
+ex: friends.pop();
+
+2- SHIFT: REMOVES THE FIRST ELEMENT OF THE ARRAY:
+ex: friends.shift(); 
+
+Will return the element that was removed
+
+------------------
+
+-> SHOWS THE POSITION OF AN ELEMENT: 
+ex: friends.indexOf('Jon');
+
+--------- NEW METHOD INCLUDED BY ES6: 
+- INCLUDES: CHECK IF AN ELEMENT IS INCLUDED IN THE ARRAY: 
+ex: friends.includes('Jon') 
+return a booleano
