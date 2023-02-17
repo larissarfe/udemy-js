@@ -1,0 +1,23 @@
+
+--- ARRAYS 
+
+- STEVEN IS STILL BUILDING HIS TIP CALCULATOR, USING THE SAME RULES AS BEFORE:
+TIP 15% OF THE BILL IF THE BILL VALUE IS BETWEEN 50 AND 300, AND IF THE VALUE IS DIFFERENT, THE TIP IS 20 %
+
+function calcTip (bill) {
+    if (bill > 50 && bill <= 300){
+     return (bill * 15) / 100;
+    } else {
+      return (bill * 20) / 100;
+    }
+}
+
+//calcTip(125);
+//calcTip(555);
+//calcTip(44);
+
+//console.log([calcTip(125), calcTip(555), calcTip(44)]);
+const bills = [125, 555, 44]
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+const total = [125 + 18.75, 555 + 111, 44 + 8.8];
+console.log(bills, tips);
