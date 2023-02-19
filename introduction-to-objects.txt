@@ -1,0 +1,67 @@
+
+IT'S ANOTHER DATA STRUCTURE 
+
+IN ARRAYS WE CAN'T REFERENCE EACH OF THE ELEMENTS BY THE NAME BUT ONLY BY THEIR
+ORDER NUMBER IN WHICH THEY APPEAR IN THE ARRAY.
+
+TO SOLVE THAT PROBLEM WE HAVE ANOTHER DATA STRUCTURE IN JS CALLED OBJECTS
+SO IN OBJECTS, WE ACTUALLY DEFINE KEY VALUE PAIRS
+
+- CREATING AN OBJECT:
+
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'blablabla',
+    age: 2037 - 1991,
+    job: 'teacher',
+    friends: ['Michael', 'Peter', 'Steven']
+}
+
+IMP: EACH OF THESE KEYS IS ALSO CALLED A PROPERTY
+
+- that was the literal syntax of creating an OBJECT
+
+-----> HOW DO WE GET DATA FROM AN OBJECT:
+
+DOT VS BRACKET SYNTAX: 
+
+THE ORDEROF THE PROPERTIES SIMPLY JUST NOT MATTER
+AND THAT'S BECAUSE WE SIMPLY GET THE PROPERTIES FROM THE OBJECT USING THE PROPERTY NAME ITSELF 
+
+1- SO THE FIRST WAY FROM GETTING A PROPERTY FROM AN OBJECT IS USING THE DOT NOTATION 
+console.log(jonas.lastName);
+
+2- WITH THE BRACKET NOTATION: 
+console.log(jonas['lastName']);
+
+IMP::::: WE CAN USE ANY EXPRESSION WITH THE [], FOR EX:
+
+const nameKey = 'Name';
+console.log(jonas['first' + nameKey]);
+console.log(jonas['last' + name]); 
+
+-------------> ONE MORE EXAMPLE OF THE USE OF THE [] TO ACESS PROPERTIES:
+
+const interestedIn = prompt('What do you want to know about jonas? Choose between firstName, lastName, age, job and friends');
+
+console.log(jonas[interestedIn]);
+
+
+OBS: THE PROMPT BUILT IN FUNCTION WILL RETURN A STRING THAT WE CAN STORE INTO A VARIABLE!!!!!
+WITH THIS AND WITH THE [] SYNTAX WE CAN CREATE A FUNCTION THAT CAN ASSOCIATE THE PROMPT RETURN STRING WITH THE OBJECT PROPERTIES
+
+----- IT WOULD NOT HAVE WORKED WITH THE DOT SYNTAX, BECAUSE IT IS LITERAL RELATED TO THE OBJECT PROPERTIES, 
+SO THE OUTPUT WILL BE UNDEFINED IF jonas.interestedIn, since theres no interestedIn as property
+
+-------- > IMP::: UNDEFINED IS A FALSY VALUE!!!!!!! 
+
+if(jonas[interestedIn]){
+   console.log(jonas[interestedIn]);
+}  else{
+    console.log('Wrong request! Choose between firstName, lastName, age, job and friends');')
+}
+
+----------> ADDING PROPERTIES USING THE DOT AND THE []::
+
+jonas.location = 'Portugal;'
+jonas['location'] = 'Portugal';
