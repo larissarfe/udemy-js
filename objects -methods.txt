@@ -1,0 +1,80 @@
+
+------->>>>> OBJECT METHODS::
+
+-- Objects just like arrays can hold different types of data.
+In fact they can even hold objects inside objects 
+
+- FUNCTIONS ARE JUST ANOTHER TYPE OF VALUE
+
+AND IF A FUNCTION IS JUST A VALUE, THEN THAT MEANS THAT WE CAN CREATE A KEY VALUE PAIR IN WHICH THE VALUE IS A FUNCTION
+AND THAT THEN MEANS THAT WE CAN ADD FUNCTIONS TO OBJECTS
+
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'blablabla',
+    birthyear: 1991,
+    job: 'teacher',
+    friends: ['Michael', 'Peter', 'Steven'],
+    hasDriversLicense: true,
+
+    calcAge: function(birthyear) {
+        return 2037 - this.birthyear;
+    }
+};
+
+--- ANY FUNCTION THAT IS ATTACHED TO AN OBJECT IS CALLED A METHOD!!!!!!!!!!
+
+AN DECLARATI0N WOULD NOT WORK HERE BECAUSE WE NEED AN EXPRESSION
+DECLARATI0N: function calcAge(birthyear){
+    return 2037 - birthyear;
+}
+
+A METHOD IS ALSO A PROPERTY THAT H0LDS THE FUNCTION VALUE 
+
+-------> THE THIS KEYWORD: 
+
+THE THIS KEYWORD OR THE THIS VARIABLE IS BASICALLY EQUAL TO THE OBJECT ON WHICH THE METHOD IS CALLED OR IN OTHER WORDS,
+IT IS EQUAL TO THE OBJECT CALLING THE METHOD. 
+
+--> OBS: IF WE NEED TO CALL THE SAME METHOD MULTIPLE TIMES DURING THE PROGRAM, WE CAN CREATE A PROPERTY FOR IT.
+WE CAN CREATE A THIS KEYWORD ALSO TO STORE A NEW PROPERTY: 
+
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'blablabla',
+    birthyear: 1991,
+    job: 'teacher',
+    friends: ['Michael', 'Peter', 'Steven'],
+    hasDriversLicense: true,
+
+    calcAge: function() {
+        this.age = 2037 - birthyear;
+         return this.age; 
+        
+    }
+};
+
+HERE WE ARE CREATING A JONAS.AGE AND SETTING IT T0 THIS AGE THAT WE JUST CALCULATED. 
+
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'blablabla',
+    birthyear: 1991,
+    job: 'teacher',
+    friends: ['Michael', 'Peter', 'Steven'],
+    hasDriversLicense: true,
+
+    calcAge: function() {
+        this.age = 2037 - birthyear;
+         return this.age; 
+        
+    }, 0BS: JUST LIKE WITH PROPERTIES WE NEED A C0MMA AFTER METHODS
+    
+    0BS: IS BETTER T0 ACTUALLY CALL THE FUNCTION calcAge INSTEAD 0F THE AGE PROPERTY
+
+    getSummary: function(){
+    return `${this.firstName} is a ${this.calcAge} -years old ${this.job}, and he has ${this.hasDriversLicense ? 'a' : 'no' } driver's license.`
+   }
+};
+
+console.log(jonas.getSummary());
