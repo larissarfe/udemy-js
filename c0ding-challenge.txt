@@ -1,0 +1,37 @@
+1- F0r each 0f them, create an 0bject with PROPERTIES FOR THEIR FULL NAME, MASS AND HEIGHT (MARK MILLER AND JOHN SMITH);
+
+2- CREATE A 'calcBMI' METHOD ON EACH OBJECT TO CALCULATE THE BMI (THE SAME METHOD FOR BOTH OBJECTS). 
+STORE THE BMI VALUE TO A PROPERTY, AND ALSO RETURN IT FROM THE METHOD. 
+
+3- LOG TO THE CONSOLE WHO HAS THE HIGHER BMI, TOGETHER WITH THE FuLL NAME NAME AND THE RESPECTIVE BMI, 
+EXAMPLE: 'JOHN'S BMI (28.3) IS HIGHER THAN MARK'S (23.9)!' 
+
+TEST DATA: MARK WEIGHTS 78 KG AND IS 1,69 M TALL. 
+JOHN WEIGHTS 92 KG AND IS 1.95 M TALL 
+
+OBS::: HOW TO CALCULATE -> BMI = MASS / HEIGHT ** 2 = MASS / (HEIGHT ** HEIGHT)
+
+const mark {
+    fullName: 'Mark Miller',
+    mass: 78, 
+    height: 1.69, 
+    calcBmi: function(){
+        this.bmi = this.mass / (this.height * this.height);
+        return this.bmi;
+
+    }
+};
+
+
+const john {
+    fullName: 'John Smith',
+    mass: 92, 
+    height: 1.95, 
+    calcBmi: function(){
+        this.bmi = this.mass / (this.height * this.height);
+        return this.bmi;
+    }
+};
+
+
+------ OBS::: THE FUNCION HAS NO PARAMETERS BECAUSE WE WILL TAKE THE DATA DIRECTLY FROM THE OBJECT 
