@@ -1,0 +1,66 @@
+
+----> LOOPING ARRAYS, BREAKING AND CONTINUING: 
+
+-- SOME MORE FEATURES OF THE FOR LOOP:
+
+H0W T0 MAKE A LOOP: THE STARTING VARIABLE; THE CONDITION; AND COUNTER UPDATE
+
+
+for (let rep = 1; rep <= 10; rep++) {
+    console.log(`Lifting weights repetition ${rep}`);
+}
+
+const jonasArray = [
+    'Jonas',
+    'Schmedtmann',
+    2037 - 1991, 
+    'teacher',
+    ['Michael', 'Peter', 'Steven' ]
+];
+
+const types = []
+
+for (let i = 0; i < jonasArray.length; i++) {
+    console.log(jonasArray[i], typeof jonasArray[i]);
+     // filling types array 
+    types[i] = typeof jonasArray[i];
+}
+
+console.log(types);
+
+// now iterating to calculate ages: 
+
+const years = [1991, 2007, 1969, 2020]; 
+const ages = []; 
+
+for (let i = 0; i < years.length; i++){
+    ages.push(2037 - years[i]);
+}
+
+console.log(ages);
+
+-------------------> CONTINUE AND BREAK KEYWORD::
+
+WE USE CONTINUE TO IGNORE SOMETHING WHEN ITERATING OVER AND 
+WE USE BREAK TO STOP THE LOOP 
+
+FOR EXAMPLE - USE 0F CONTINUE: 
+
+// only strings 
+
+for (let i = 0; i < jonasArray.length; i++) {
+    if (typeof jonasArray[i] !== 'string') continue;
+
+    console.log(jonasArray[i], typeof jonasArray[i]);
+}
+
+WITH CONTINUE WE CAN EXIT THE CURRENT ITERATION OF THE LOOP AND THE NEXT 0NE STARTS IMMEDIATELY
+
+---- BREAK: WHAT BREAK DOES IS C0MPLETELY TERMINATE THE WHOLE LOOP SO NOT JUST THE CURRENT ITERATION
+
+// only numbers
+for (let i = 0; i < jonasArray.length; i++) {
+    if (typeof jonasArray[i] === 'number') break;
+
+    console.log(jonasArray[i], typeof jonasArray[i]);
+}
